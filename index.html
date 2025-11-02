@@ -7,8 +7,184 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-h2 {font-family: "Roboto"; color:white; position:relative; left: 50px;}
-html,body,h1,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+/* Simple and Professional Styling */
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --light-gray: #ecf0f1;
+  --text-dark: #2c3e50;
+  --text-medium: #555;
+}
+
+h2 {
+  font-family: "Roboto"; 
+  color: white; 
+  position: relative; 
+  left: 50px;
+  font-weight: 400;
+}
+
+html, body, h1, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Card Styling */
+.w3-card, .w3-card-4 {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.w3-card:hover, .w3-card-4:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important;
+}
+
+/* Profile Image */
+.w3-display-container img {
+  border-radius: 8px 8px 0 0;
+}
+
+/* Teal/Primary Color */
+.w3-teal, .w3-hover-teal:hover {
+  background-color: var(--accent-color) !important;
+}
+
+.w3-text-teal {
+  color: var(--accent-color) !important;
+}
+
+/* Section Headers */
+.w3-text-grey {
+  color: var(--text-dark) !important;
+  font-weight: 500 !important;
+}
+
+.w3-padding-16 {
+  border-bottom: 2px solid var(--light-gray);
+  margin-bottom: 15px;
+}
+
+/* Tags */
+.w3-tag {
+  border-radius: 4px !important;
+  padding: 4px 10px !important;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Icons */
+.fa-briefcase, .fa-home, .fa-envelope, .fa-phone,
+.fa-certificate, .fa-globe, .fa-industry,
+.fa-user, .fa-cogs, .fa-suitcase {
+  color: var(--accent-color) !important;
+}
+
+/* Content */
+.w3-container p {
+  line-height: 1.7;
+  color: var(--text-medium);
+}
+
+.w3-container p b {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Footer - Simple and Clean */
+footer {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 25px 0 !important;
+}
+
+footer p {
+  color: white !important;
+  margin: 8px 0;
+}
+
+.fa-linkedin {
+  font-size: 28px;
+  color: white !important;
+  transition: opacity 0.3s ease;
+}
+
+.fa-linkedin:hover {
+  opacity: 0.8;
+}
+
+/* HR Styling */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--light-gray);
+  margin: 20px 0;
+}
+
+/* Left Column */
+.w3-third .w3-container {
+  padding: 18px !important;
+}
+
+/* Headers */
+h5.w3-opacity {
+  color: var(--text-dark) !important;
+  font-weight: 600 !important;
+  margin-top: 0;
+}
+
+h6 {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+/* Content Container */
+.w3-content {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* White Cards */
+.w3-white {
+  background-color: #ffffff !important;
+}
+
+/* Spacing */
+.w3-margin-bottom {
+  margin-bottom: 20px !important;
+}
+
+/* Name styling */
+.w3-display-bottomleft h2 {
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section icons size */
+.w3-xxlarge {
+  font-size: 32px !important;
+}
+
+.w3-large {
+  font-size: 18px !important;
+}
+
+/* Professional spacing */
+.w3-container > p:first-of-type {
+  margin-top: 0;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -42,10 +218,7 @@ html,body,h1,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
           <p>• English<br>
-          • Hindi<br>
-          • Punjabi
-          </p>
-          
+          • Hindi</p>
           <br>
 
           <p class="w3-large"><b><i class="fa fa-industry fa-fw w3-margin-right w3-text-teal"></i>Industry Experience</b></p>
